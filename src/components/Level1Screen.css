@@ -1,0 +1,148 @@
+.level1-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', monospace;
+  color: white;
+}
+
+.level1-content {
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.level1-title {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 2rem;
+}
+
+.level1-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.level1-avatar img {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 0 0 30px #b61bbe;
+}
+
+.level1-description {
+  max-width: 600px;
+  text-align: left;
+   color: rgb(0, 0, 0);
+
+  text-shadow: 1px 1px #000;
+  font-size: 0.7rem;
+  text-decoration: blueviolet;
+  line-height: 2rem;
+}
+.bubble-style {
+  background-color: #b3b3ff;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+  padding: 20px;
+  max-width: 550px;
+  margin-top: 2rem;
+}
+
+
+.level1-astronaut {
+  position: relative;
+  margin-top: 4rem;
+  
+}
+
+
+.speech-bubble {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  background-color: #b3b3ff;
+  color: black;
+  border: 2px solid #000;
+  padding: 10px;
+  font-size: 0.5rem;
+  width: 150px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #000;
+  text-align: center;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.typewriter-title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  animation: typing-title 3s steps(20, end) forwards, blink-caret 0.7s step-end infinite;
+}
+
+@keyframes typing-title {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+.level1-astronaut {
+  position: relative;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* espace entre flèche et bulle */
+}
+.speech-bubble:hover {
+  transform: scale(1.05);
+}
+@keyframes floatAvatar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.float-avatar {
+  animation: floatAvatar 2.5s ease-in-out infinite;
+}
+.level1-avatar-wrapper {
+  position: relative;
+  width: 220px;
+  height: 250px; /* un peu plus grand que l’avatar pour laisser de la place au vaisseau */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: floatAvatar 2.5s ease-in-out infinite;
+}
+
+.avatar-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 3px solid #09026b;
+  box-shadow: 0 0 30px #b61bbe;
+  z-index: 2;
+  position: relative;
+}
+
+.spaceship-img {
+  position: absolute;
+  bottom: -50px;
+  width: 290px; /* un peu plus large pour bien encadrer */
+  z-index: 1;
+}

@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "silkscreen";
+  src: url('https://dl.dropbox.com/s/l0frac4d7bz3zx6/silkscreen.ttf');
+}
+
+.level3-screen {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-title {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+#speech-bubble {
+  width: 500px;
+  margin: 0 auto 30px auto;
+  margin-top: 50px;
+}
+
+#bub-part-a {
+  margin-left: 6px;
+  width: calc(100% - 12px);
+  height: 2px;
+  background: #222;
+}
+
+#bub-part-b {
+  margin-left: 4px;
+  width: calc(100% - 12px);
+  height: 2px;
+  background: #abeaea;
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+#bub-part-c {
+  margin-left: 2px;
+  width: calc(100% - 8px);
+  height: 2px;
+  background: #abeaea;
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+#speech-txt {
+  width: calc(100% - 24px);
+  padding: 16px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #000;
+  text-align: left;
+  background: #abeaea;
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+#speech-txt a {
+  color: #8a3fd1;
+  text-decoration: underline;
+}
+
+#speech-arrow {
+  margin-top: -2px;
+  margin-left: 360px; /* tu peux ajuster ça pour la flèche */
+}
+
+#arrow-w {
+  width: 8px;
+  height: 8px;
+  background: #abeaea;
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+#arrow-x {
+  width: 6px;
+  height: 2px;
+  background: #abeaea;
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+#arrow-y {
+  margin-left: -2px;
+  width: 6px;
+  height: 2px;
+  background: #abeaea;
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+#arrow-z {
+  margin-left: -2px;
+  width: 8px;
+  height: 2px;
+  background: #222;
+}
+
+/* 👇 START BUTTON 👇 */
+.start-projects-btn {
+background-color: #402060; /* fond violet foncé */
+  padding: 1rem 2rem;
+  border: none;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px #f7a7e8; /* ombre rose en 2px */
+  cursor: pointer;
+  image-rendering: pixelated;
+  clip-path: polygon(
+    0% 10%, 10% 0%, 90% 0%, 100% 10%,
+    100% 90%, 90% 100%, 10% 100%, 0% 90%
+  );
+  box-shadow: 0 0 0 4px #fff; /* contour blanc */
+  transition: transform 0.2s ease;
+}
+
+.start-projects-btn:hover {
+  background: #9b4dff;
+    transform: scale(1.05);
+
+  box-shadow: 0 0 20px #d580ff, 0 0 40px #d580ff;
+}
+.character-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+.speech-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.project-guy {
+  width: 70px;
+  height: auto;
+  image-rendering: pixelated;
+}

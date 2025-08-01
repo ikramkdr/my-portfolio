@@ -1,0 +1,73 @@
+.transition4-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Press Start 2P', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.final-title {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px #000;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+.final-subtext {
+  font-size: 0.8rem;
+  text-shadow: 1px 1px #000;
+  max-width: 600px;
+  line-height: 1.6rem;
+}
+
+.contact-button {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  background-color: rgb(131, 1, 154);
+  color: rgb(255, 255, 255);
+  padding: 0.6rem 1.2rem;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.level-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.level-links a {
+  font-size: 0.6rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.level-links a:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}

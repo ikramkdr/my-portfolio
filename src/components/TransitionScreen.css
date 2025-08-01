@@ -1,0 +1,67 @@
+.transition-bg {
+  position: absolute;
+  inset: 0;
+  background: url('../assets/backgrounds/background3.svg'); /* change path if needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.transition-text h1,
+.level-text {
+  font-family: 'Press Start 2P';
+  color: white;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.dots span {
+  animation: blink 1s infinite;
+  font-size: 2rem;
+  margin: 0 2px;
+  color: white;
+}
+
+.dots span:nth-child(2) { animation-delay: 0.2s; }
+.dots span:nth-child(3) { animation-delay: 0.4s; }
+.dots span:nth-child(4) { animation-delay: 0.6s; }
+.dots span:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+.level-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.start-button {
+background-color: #402060; /* fond violet foncé */
+  padding: 1rem 2rem;
+  border: none;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px #f7a7e8; /* ombre rose en 2px */
+  cursor: pointer;
+  image-rendering: pixelated;
+  clip-path: polygon(
+    0% 10%, 10% 0%, 90% 0%, 100% 10%,
+    100% 90%, 90% 100%, 10% 100%, 0% 90%
+  );
+  box-shadow: 0 0 0 4px #fff; /* contour blanc */
+  transition: transform 0.2s ease;
+}
+
+.start-button:hover {
+  background: #9b4dff;
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 0 20px #d580ff, 0 0 40px #d580ff;
+}

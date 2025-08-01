@@ -1,0 +1,18 @@
+/* FloatingCreature.css */
+.floating-creature {
+  position: absolute;
+  width: 40px;
+  animation: floatUpDown 3s ease-in-out infinite alternate,
+             floatSideways 5s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+@keyframes floatUpDown {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(15px); }
+}
+
+@keyframes floatSideways {
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(20px); }
+}
