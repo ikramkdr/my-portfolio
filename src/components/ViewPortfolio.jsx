@@ -69,7 +69,7 @@ export default function ViewPortfolio({ onBack }) {
                               <h2 id="salutation">HII! I AM IKRAM</h2>
 
                 I’m a 21-year-old Computer Engineering student from Algeria, currently studying at the University of Cagliari in Italy.<br />
-                Awarded the FORMED scholarship, I specialize in Cybersecurity and Artificial Intelligence.<br />
+                I specialize in Cybersecurity and Artificial Intelligence.<br />
                 I’m passionate about designing innovative user interfaces, building intelligent systems, and exploring the cutting edge of technology to solve real-world problems.<br />
                 Through my projects and studies, I strive to combine creativity and technical expertise to deliver impactful solutions.
               </p>
