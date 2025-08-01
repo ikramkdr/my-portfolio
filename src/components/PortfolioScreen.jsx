@@ -26,7 +26,7 @@ export default function PortfolioScreen({ onPlay, onViewPortfolio }) {
   };
 
   return (
-    <>
+    <><div className='story-background'>
      <div className="story-wrapper">
   <h1 className="story-title pixel-text">WELCOME PLAYER1</h1>
   <p className="story-subtitle pixel-text">CHOOSE HOW TO VIEW MY PORTFOLIO</p>
@@ -60,7 +60,7 @@ export default function PortfolioScreen({ onPlay, onViewPortfolio }) {
       Jayendra AWASTHI
     </a>
   </p>
-</div>
+</div></div>
  
       
     </>
