@@ -1,3 +1,6 @@
+/* ViewPortfolio.css */
+
+/* Conteneur principal avec background fixe */
 .view-portfolio-container {
   min-height: 100vh;
   background-image: url('../assets/backgrounds/background3.svg');
@@ -65,31 +68,31 @@
 }
 
 /* Fusée */
-.spaceshipp-img {
+.spaceshippp-img {
   position: absolute;
   top: 20px;
-  left: -43px;
+  left: 0px;
   width: 160px;
   height: 160px;
   user-select: none;
   animation: float 3s ease-in-out infinite;
 }
 
+
 /* Avatar */
 .avatarr-img {
-  position: relative; /* au lieu de absolute */
-  width: 100px;       /* taille modifiable ici */
+  position: relative;
+  width: 100px;
   height: 100px;
-    z-index: 100;
- border-radius: 100%;
+  border-radius: 50%;
   border: 3px solid rgb(0, 0, 0);
   box-shadow: 0 0 30px #b61bbe;
-  border-radius: 50%;
   object-fit: cover;
   user-select: none;
   animation: float 3s ease-in-out infinite;
-  margin-left: 30px;  /* remplace left pour décaler horizontalement */
-  margin-top: 20px;   /* remplace top pour décaler verticalement */
+  margin-left: 30px;
+  margin-top: 20px;
+  z-index: 100;
 }
 
 #salutation {
@@ -245,22 +248,20 @@
     margin-bottom: 1rem;
   }
 
-  .spaceship-img,
+  .spaceshippp-img,
   .avatarr-img {
     position: relative;
-    top: 15PX;
-    left: -77px;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     animation: float 3s ease-in-out infinite;
   }
 
   .avatarr-img {
-    width: 80px;
-    height: 80px;    z-index: 100;
+    width: 90px;
+    height: 90px;    z-index: 100;
     border-radius: 50%;
-    left: -4PX;
-    top:70px;
+    left: -6PX;
+    top: -70px;
     margin-top: -60px; /* chevauchement léger */
   }
 
