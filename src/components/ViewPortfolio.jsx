@@ -153,57 +153,44 @@ export default function ViewPortfolio({ onBack }) {
 
         {/* Contact Me Section */}
         <section className="section contact-me">
-          <h1>CONTACT ME</h1>
-<p className="contact-intro">
-  Feel free to reach out! Whether you have questions, project ideas, or just want to say hi, I’m here to connect.
-</p>
-
-          <form className="contact-form" onSubmit={(e) => {
-            e.preventDefault();
-            const templateParams = {
-              from_name: email,
-              reply_to: email,
-              message,
-            };
-            emailjs.send('service_oi2sj3d', 'template_l7z44bn', templateParams, 'S6GZz0HsDeP4ePrws')
-              .then(() => {
-                setStatus('Message sent successfully!');
-                setEmail('');
-                setMessage('');
-              })
-              .catch(() => setStatus('Failed to send message.'));
-          }}>
-            <input
-              type="email"
-              placeholder="Your email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-            />
-            <textarea
-              placeholder="Your message"
-              value={message}
-              onChange={e => setMessage(e.target.value)}
-              required
-            />
-            <button type="submit">SEND</button>
-            {status && <p className="form-status">{status}</p>}
-          </form>
- <p className="find-me-text">
+  <h1>CONTACT ME</h1>
+  <p className="contact-intro">
+    Feel free to reach out! Whether you have questions, project ideas, or just want to say hi, I’m here to connect.
   </p>
 
-  <div className="social-sidebar">
-    <a href="https://github.com/ikramkdr" target="_blank" rel="noreferrer">
-      <img src={githubIcon} alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/ikram-kadri-2159ab284/" target="_blank" rel="noreferrer">
-      <img src={linkedinIcon} alt="LinkedIn" />
-    </a>
-    <a href="https://www.instagram.com/kdr_ikr/" target="_blank" rel="noreferrer">
-      <img src={instagramIcon} alt="Instagram" />
-    </a>
+  <div className="contact-wrapper">
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <input
+        type="email"
+        placeholder="Your email"
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+        required
+      />
+      <textarea
+        placeholder="Your message"
+        value={message}
+        onChange={e => setMessage(e.target.value)}
+        required
+      />
+      <button type="submit">SEND</button>
+      {status && <p className="form-status">{status}</p>}
+    </form>
+
+    <div className="socials-sidebar">
+      <a href="https://github.com/ikramkdr" target="_blank" rel="noreferrer">
+        <img src={githubIcon} alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/ikram-kadri-2159ab284/" target="_blank" rel="noreferrer">
+        <img src={linkedinIcon} alt="LinkedIn" />
+      </a>
+      <a href="https://www.instagram.com/kdr_ikr/" target="_blank" rel="noreferrer">
+        <img src={instagramIcon} alt="Instagram" />
+      </a>
+    </div>
   </div>
-        </section>
+</section>
+
       </div>
     </div>
   );
