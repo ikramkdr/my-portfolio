@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import StartScreen from './components/StartScreen';
 import PortfolioScreen from './components/PortfolioScreen';
 import TransitionScreen from './components/TransitionScreen';
 import Transition2 from './components/Transition2';
 import Transition3 from './components/Transition3';
+import ViewPortfolio from './components/ViewPortfolio'; //
 import ContactFormScreen from './components/ContactForm';
 import Level1Screen from './components/Level1Screen';
 import Level2Screen from './components/Level2Screen';
@@ -24,11 +25,20 @@ export default function App() {
             <StartScreen key="start" onStart={() => setScreen('portfolio')} />
           )}
           {screen === 'portfolio' && (
-            <PortfolioScreen key="portfolio" onPlay={() => setScreen('transition')} />
-          )}
+  <PortfolioScreen
+    key="portfolio"
+    onPlay={() => setScreen('transition')}
+    onViewPortfolio={() => setScreen('viewPortfolio')}
+  />
+)}
+{screen === 'viewPortfolio' && (
+  <ViewPortfolio key="viewPortfolio" onBack={() => setScreen('portfolio')} />
+)}
+
           {screen === 'transition' && (
             <TransitionScreen key="transition" onLevelStart={() => setScreen('level1')} />
           )}
+          
           {screen === 'level1' && (
             <Level1Screen key="level1" onNextLevel={() => setScreen('transition2')} />
           )}
