@@ -1,17 +1,27 @@
-.story-wrapper {
-  position: relative;
-  position: absolute;
+.story-background {
+  position: fixed;
   inset: 0;
-  z-index: -1;
   background-image: url('../assets/backgrounds/background2.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  padding-left: 4rem;
-  padding-top: 8rem;
-  z-index: 2;
+  z-index: 1;
 }
+
+.story-wrapper {
+  position: fixed;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 90vw;
+  padding: 2rem 4rem;
+  background: transparent; /* ou semi-transparent si tu veux */
+  z-index: 2;
+  box-sizing: border-box;
+}
+
 
 .story-title {
   font-family: 'Press Start 2P', monospace;
@@ -20,6 +30,7 @@
   text-shadow: 2px 2px 0px rgba(0,0,0,0.7);
   margin-bottom: 1rem;
 }
+
 
 .story-subtitle {
   font-family: 'Press Start 2P', monospace;
@@ -48,9 +59,9 @@ background-color: #402060; /* fond violet foncé */
 #source {
   font-size: 10px;
   color: black;
-  margin-top: 60px;
-  text-align: center;
+  margin-top: 20px;
   opacity: 0.5;
+  float: left;
 }
 
 .story-button:hover {
