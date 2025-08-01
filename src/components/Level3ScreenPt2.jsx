@@ -22,7 +22,7 @@ const projects = [
     title: 'FACIAL RECOGNITION SYSTEM',
     gif: gifFace,
     description: `A dual-pipeline facial recognition system combining traditional image processing and deep learning. The first pipeline leverages LBP histograms with KNN/SVM for lightweight recognition. The second uses a CNN trained on the VGGFace2 dataset, offering robust performance even under extreme lighting conditions (dark, bright, shadow). The model was stress-tested for real-world reliability, simulating camera noise, distortion, and contrast variation.`,
-    link: 'https://github.com/ikramkdr/Facial-Recognition-VGGFace2',
+    link: 'https://github.com/ikramkdr/Facial_recognition',
     stack: 'OpenCV, PyTorch, Google Colab'
   },
   {
@@ -32,7 +32,7 @@ const projects = [
 
 Includes secure user authentication, ride filtering, and notification logic.
 This project demonstrates real-time system design, database architecture, and full-stack scalability , making it much more than a CRUD app.`,
-    link: 'https://github.com/ikramkdr/Covoiturage-App',
+    link: 'https://github.com/ikramkdr/Carpooling-Web-App',
     stack: 'React, Node.js, Express, MySQL, Tailwind'
   },
   {
