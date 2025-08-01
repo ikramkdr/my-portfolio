@@ -49,7 +49,6 @@ export default function PortfolioScreen({ onPlay, onViewPortfolio }) {
       <button className="story-button" onClick={handlePlayClick}>
         PLAY GAME
       </button>
-      <img src={arrowIcon} alt="Arrow" className="arrow-nudge" />
     </div>
   </div>
 
