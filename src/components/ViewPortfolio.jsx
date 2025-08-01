@@ -61,9 +61,9 @@ export default function ViewPortfolio({ onBack }) {
           <h1>ABOUT ME</h1>
           <div className="about-me-box">
             <div className="about-me-left">
-              <img src={spaceship} alt="Spaceship" className="spaceshipp-img" />
-              <img src={avatar} alt="Avatar" className="avatarr-img" />
-            </div>
+             <img src={spaceship} alt="Spaceship" className="spaceshippp-img" />
+<img src={avatar} alt="Avatar" className="avatarr-img" />
+ </div>
             <div className="about-me-right">
               <p>
                               <h2 id="salutation">HII! I AM IKRAM</h2>
