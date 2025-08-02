@@ -142,6 +142,7 @@
   
 .level2-title {
   font-size: 0.9rem;
+  align-self: center;
   text-align: center;
 }
   .skills-left, .skills-right {
@@ -172,3 +173,24 @@
   overflow-wrap: break-word;
   hyphens: auto; /* optional */
 }
+
+@media (max-width: 500px) {
+  .skill-box {
+    flex-direction: column;
+    height: auto;      /* Let height adapt to content */
+    padding: 0.5rem;
+    width: 80%;        /* Smaller width on mobile */
+    max-width: 300px;  /* Optional max width */
+  }
+ .skill-item {
+    font-size: 0.5rem;
+  }
+   .skill-item span {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+  .note-text {
+  font-size: 0.4rem;
+  text-align: center;
+  }
+  }
