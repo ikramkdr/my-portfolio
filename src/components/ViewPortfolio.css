@@ -4,7 +4,7 @@
 .view-portfolio-container {
   min-height: 100vh;
   background-image: url('../assets/backgrounds/background3.svg');
-  background-attachment: fixed;
+  background-attachment: fixed; /* background fixé */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
   top: 1rem;
   left: 2rem;
   z-index: 1000;
-  font-family: 'Press Start 2P', monospace;
+ font-family: 'Press Start 2P', monospace;
   font-size: 0.6rem;
   padding: 0.8rem;
   background-color: #c8d8ff;
@@ -31,11 +31,10 @@
   cursor: pointer;
   transition: 0.2s;
 }
-
 .backK-button:hover {
   font-size: 0.8rem;
-}
 
+}
 /* Boîte bleue englobante */
 .blue-box {
   background-color: rgba(200, 216, 255, 0.85);
@@ -58,7 +57,7 @@
   display: flex;
   gap: 2rem;
   align-items: center;
-  position: relative;
+  position: relative; /* pour les images absolues */
 }
 
 .about-me-left {
@@ -68,6 +67,7 @@
   flex-shrink: 0;
 }
 
+/* Fusée */
 .spaceshippp-img {
   position: absolute;
   top: 20px;
@@ -78,6 +78,8 @@
   animation: float 3s ease-in-out infinite;
 }
 
+
+/* Avatar */
 .avatarr-img {
   position: relative;
   width: 100px;
@@ -95,7 +97,8 @@
 
 #salutation {
   color: #8b0f7e;
-  text-shadow: 1px 1px 0px #000000cc;
+ text-shadow: 1px 1px 0px #000000cc;
+
 }
 
 .about-me-right {
@@ -110,7 +113,6 @@
 }
 
 /* Skills et Projects listes */
-
 .skills ul,
 .projects ul {
   max-width: 900px;
@@ -123,7 +125,6 @@
 }
 
 /* Projets : liste avec gif + texte */
-
 .project-item {
   display: flex;
   align-items: flex-start;
@@ -148,7 +149,6 @@
 }
 
 /* Projects Section Styling */
-
 .projects {
   max-width: 900px;
   margin: 0 auto 4rem auto;
@@ -161,7 +161,8 @@
   background-color: rgba(149, 4, 127, 0.5);
   border: 3px solid #000000;
   border-radius: 10px;
-  text-shadow: 2px 2px 5px #000000cc;
+    text-shadow: 2px 2px 5px #000000cc;
+
   box-shadow: 0 0 15px #6a5acd88;
 }
 
@@ -169,7 +170,8 @@
   margin-bottom: 1.2rem;
   font-size: 1.3rem;
   color: #000000;
-  text-shadow: 0px 0px 0px #000000cc;
+      text-shadow: 0px 0px 0px #000000cc;
+
 }
 
 .projects ul {
@@ -182,6 +184,7 @@
   white-space: pre-wrap;
 }
 
+/* Table des skills */
 .skills-table {
   width: 100%;
   max-width: 900px;
@@ -219,7 +222,6 @@
 }
 
 /* Animations */
-
 @keyframes float {
   0%,
   100% {
@@ -255,13 +257,12 @@
   }
 
   .avatarr-img {
-    width: 80%;
-    height: 90px;
-    z-index: 100;
+    width: 90px;
+    height: 90px;    z-index: 100;
     border-radius: 50%;
-    left: -6px;
+    left: -6PX;
     top: -70px;
-    margin-top: -60px;
+    margin-top: -60px; /* chevauchement léger */
   }
 
   .about-me-right {
@@ -272,12 +273,11 @@
   }
 
   .skills ul,
-  .projects {
+  .projects ul {
+    padding-left: 1rem;
     font-size: 0.9rem;
   }
-
- 
-
+  
    .projects {
     max-width: 270px;
     width: 100%;
@@ -312,38 +312,37 @@
     text-align: center;
     font-size:0.6rem;
   }
-
-  .skills-table th {
-    font-size: 0.7rem;
-  }
 }
 
-/* Contact Form */
 
 .contact-form {
   box-sizing: border-box;
   z-index: 2000;
   margin: auto;
-  width: 100%;
-  max-width: 400px;
+          /* au-dessus de tout */
 }
-
 .projects strong {
   color: black;
-  text-shadow: 0px 0px 0px #000000cc;
-}
+        text-shadow: 0px 0px 0px #000000cc;
 
+}
 .projects a {
-  color: rgb(26, 0, 16);
+    color: rgb(26, 0, 16);
 }
-
 .contact-intro {
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #8b0f7e;
   font-weight: bold;
   text-align: left;
-  text-shadow: 1px 1px 0px #000000cc;
+text-shadow: 1px 1px 0px #000000cc;
+
+}
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .contact-wrapper {
@@ -351,6 +350,12 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
 }
 
 .socials-sidebar {
@@ -372,3 +377,5 @@
 .socials-sidebar img:hover {
   transform: scale(1.2);
 }
+
+
