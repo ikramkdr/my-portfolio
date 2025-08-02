@@ -354,9 +354,14 @@ text-shadow: 1px 1px 0px #000000cc;
   height: 100px;
   margin-bottom: 0.5rem;
 }
-  .skills ul {
+   .skills ul {
     padding-left: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.65rem; /* taille réduite pour mobile */
+  }
+
+  /* Optionnel : si tu veux aussi réduire la taille des items */
+  .skills ul li {
+    line-height: 1.3rem; /* ajuste la hauteur de ligne */
   }
    .project-item div {
   font-size: 0.75rem;
