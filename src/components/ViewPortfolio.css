@@ -4,7 +4,7 @@
 .view-portfolio-container {
   min-height: 100vh;
   background-image: url('../assets/backgrounds/background3.svg');
-  background-attachment: fixed; /* background fixé */
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,6 @@
   position: relative;
 }
 
-/* Bouton retour */
 .backK-button {
   position: fixed;
   top: 1rem;
@@ -51,13 +50,12 @@
   color: black;
 }
 
-/* About Me */
 
 .about-me-box {
   display: flex;
   gap: 2rem;
   align-items: center;
-  position: relative; /* pour les images absolues */
+  position: relative;
 }
 
 .about-me-left {
@@ -67,7 +65,6 @@
   flex-shrink: 0;
 }
 
-/* Fusée */
 .spaceshippp-img {
   position: absolute;
   top: 20px;
@@ -79,7 +76,6 @@
 }
 
 
-/* Avatar */
 .avatarr-img {
   position: relative;
   width: 100px;
@@ -112,7 +108,6 @@
   padding-right: 1rem;
 }
 
-/* Skills et Projects listes */
 .skills ul,
 .projects ul {
   max-width: 900px;
@@ -124,7 +119,6 @@
   list-style: disc inside;
 }
 
-/* Projets : liste avec gif + texte */
 .project-item {
   display: flex;
   align-items: flex-start;
@@ -148,7 +142,6 @@
   line-height: 1.4rem;
 }
 
-/* Projects Section Styling */
 .projects {
   max-width: 900px;
   margin: 0 auto 4rem auto;
@@ -184,7 +177,6 @@
   white-space: pre-wrap;
 }
 
-/* Table des skills */
 .skills-table {
   width: 100%;
   max-width: 900px;
@@ -221,7 +213,6 @@
   white-space: normal;
 }
 
-/* Animations */
 @keyframes float {
   0%,
   100% {
@@ -232,7 +223,6 @@
   }
 }
 
-/* Responsive */
 
 @media (max-width: 800px) {
   .about-me-box {
@@ -261,7 +251,7 @@
     border-radius: 50%;
     left: -6PX;
     top: -70px;
-    margin-top: -60px; /* chevauchement léger */
+    margin-top: -60px; 
   }
 
   .about-me-right {
@@ -276,25 +266,25 @@
     font-size: 0.6rem;
   }
   .blue-box {
-    align-items: center; /* centre tous les enfants horizontalement */
+    align-items: center; 
   }
 
   .projects {
-    max-width: 500px;      /* limite largeur */
-    width: 100%;           /* prend toute la largeur possible */
-    margin: 0 auto;        /* centre la box */
-    text-align: center;    /* centre le texte */
+    max-width: 500px;    
+    width: 100%;  
+    margin: 0 auto;  
+    text-align: center;  
     display: flex;
     flex-direction: column;
-    align-items: center;   /* centre les éléments à l’intérieur */
+    align-items: center;  
   }
 
   .projects ul {
     padding-left: 0;
     margin: 0 auto;
     list-style-position: inside;
-    width: 100%;           /* faire prendre toute la largeur au UL */
-    max-width: 500px;      /* limite largeur UL */
+    width: 100%;
+    max-width: 500px;
   }
 
   .project-item {
@@ -305,11 +295,11 @@
   }
 
   .project-gif {
-    margin-bottom: 1rem;  /* espace sous l’image */
+    margin-bottom: 1rem;
   }
 
   .project-item div {
-    color: black;        /* texte en noir */
+    color: black;
     width: 100%;
     text-align: center;
   }
@@ -328,7 +318,7 @@
   box-sizing: border-box;
   z-index: 2000;
   margin: auto;
-          /* au-dessus de tout */
+       
 }
 .projects strong {
   color: black;
