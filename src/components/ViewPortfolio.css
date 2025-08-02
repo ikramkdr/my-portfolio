@@ -247,7 +247,6 @@
     height: 120px;
     margin-bottom: 1rem;
   }
-.
   .spaceshippp-img,
   .avatarr-img {
     position: relative;
@@ -276,13 +275,44 @@
   .projects {
     font-size: 0.6rem;
   }
+  .blue-box {
+    align-items: center; /* centre tous les enfants horizontalement */
+  }
+
   .projects {
-  max-width: 500px;
-  margin: auto;           /* centre horizontalement */
-  text-align: center;     /* centre le texte et le contenu */
-  display: flex;          /* active flexbox */
-  flex-direction: column; /* empile verticalement */
-  align-items: center;    /* centre horizontalement les enfants */
+    max-width: 500px;      /* limite largeur */
+    width: 100%;           /* prend toute la largeur possible */
+    margin: 0 auto;        /* centre la box */
+    text-align: center;    /* centre le texte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centre les éléments à l’intérieur */
+  }
+
+  .projects ul {
+    padding-left: 0;
+    margin: 0 auto;
+    list-style-position: inside;
+    width: 100%;           /* faire prendre toute la largeur au UL */
+    max-width: 500px;      /* limite largeur UL */
+  }
+
+  .project-item {
+    flex-direction: column !important; 
+    align-items: center !important;    
+    width: 100%;                
+    max-width: 450px;                 
+  }
+
+  .project-gif {
+    margin-bottom: 1rem;  /* espace sous l’image */
+  }
+
+  .project-item div {
+    color: black;        /* texte en noir */
+    width: 100%;
+    text-align: center;
+  }
 }
 
  
