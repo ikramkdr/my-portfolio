@@ -247,7 +247,7 @@
     height: 120px;
     margin-bottom: 1rem;
   }
-
+.
   .spaceshippp-img,
   .avatarr-img {
     position: relative;
@@ -275,8 +275,12 @@
   .skills ul,
   .projects ul {
     padding-left: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
+  .projects {
+  max-width: 500px;
+ 
+}
 }
 
 
