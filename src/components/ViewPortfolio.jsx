@@ -108,7 +108,7 @@ export default function ViewPortfolio({ onBack }) {
                 </td>
               </tr>
               <tr>
-                <th>Cybersecurity & Systems</th>
+                <th>Cyber security & Systems</th>
                 <td>
                   <ul>
                     <li>💻 VULNERABILITY EXPLOITATION</li>
