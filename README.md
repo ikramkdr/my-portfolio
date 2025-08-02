@@ -32,6 +32,7 @@ You can try it online [here](https://my-portfolio-mu-nine-56.vercel.app/)
 ---
 
 ##  Screenshots
+![IntroScreen](assets/screenshots/IntroScreen.png)
 
 
 
