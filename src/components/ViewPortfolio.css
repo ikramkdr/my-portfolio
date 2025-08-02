@@ -277,41 +277,6 @@
     padding-left: 1rem;
     font-size: 0.9rem;
   }
-  
-   .projects {
-    max-width: 270px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .projects ul {
-    padding-left: 0;
-    margin: 0 auto;
-    list-style-position: inside;
-    width: 90%;
-    max-width: 500px;
-  }
-
-  .project-item {
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    max-width: 450px;
-  }
-
-  .project-gif {
-    margin-bottom: 1rem;
-  }
-
-  .project-item div {
-    width: 100%;
-    text-align: center;
-    font-size:0.6rem;
-  }
 }
 
 
@@ -377,5 +342,3 @@ text-shadow: 1px 1px 0px #000000cc;
 .socials-sidebar img:hover {
   transform: scale(1.2);
 }
-
-
