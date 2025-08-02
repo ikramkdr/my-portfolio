@@ -362,13 +362,19 @@ text-shadow: 1px 1px 0px #000000cc;
   font-size: 0.75rem;
 }
   /* Optionnel : si tu veux aussi réduire la taille des items */
+ .skills ul {
+    padding-left: 1rem;
+    font-size: 0.65rem;   /* taille plus petite */
+    line-height: 1.2rem;  /* espacement plus serré */
+  }
+
   .skills ul li {
-    line-height: 1rem; /* ajuste la hauteur de ligne */
+    line-height: 1rem;
   }
   .skills-table th{
-  width: 20%;
-  margin-left:0px;
-  font-size:0.7rem;
+   font-size: 1.1rem;    /* un peu plus petit que sur PC */
+    text-align: center;   /* centré */
+    margin-bottom: 1rem;  /* 
  
 
   }
