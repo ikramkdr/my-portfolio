@@ -2,8 +2,9 @@
 
 This portfolio is not just a collection of projects and skills—it’s a playful experience! You can navigate it like a retro game, progressing through levels filled with animations, sounds, and pixel art. Or, if you prefer, you can jump straight to a quick résumé view for a faster look at the essentials.
 
-The design draws inspiration from classic 8-bit RPG games and a beautiful Figma concept by Jayendra AWASTHI, blending nostalgia with modern web technologies to create a unique storytelling journey through a developer’s career.
+The design draws inspiration from classic 8-bit RPG games and a beautiful Figma concept by [Jayendra AWASTHI](https://www.figma.com/@Jayendra), blending nostalgia with modern web technologies to create a unique storytelling journey through a developer’s career.
 
+You can try it online [here](https://my-portfolio-mu-nine-56.vercel.app/)
 ---
 
 ## 🚀 Features
@@ -52,22 +53,10 @@ npm run dev
 
 ---
 
-## 📚 Inspiration
 
-This project was inspired by:
-- 8-bit retro RPG games
-- GameBoy interfaces
-- Portfolios with storytelling + animation
-- A desire to merge creativity and code
-
----
-
-
-## 📫 Contact
+## Contact
 
 Made with ❤️ by [Ikram Kadri](https://github.com/ikramkdr)  
-Feel free to connect and reach out for collaborations!
-
 ---
 
 ## 🧠 License
