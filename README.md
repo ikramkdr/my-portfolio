@@ -1,4 +1,4 @@
-# 🕹️ Retro-Themed Portfolio
+# Retro-Themed Portfolio
 
 This portfolio is not just a collection of projects and skills—it’s a playful experience! You can navigate it like a retro game, progressing through levels filled with animations, sounds, and pixel art. Or, if you prefer, you can jump straight to a quick résumé view for a faster look at the essentials.
 
@@ -7,7 +7,7 @@ The design draws inspiration from classic 8-bit RPG games and a beautiful Figma 
 You can try it online [here](https://my-portfolio-mu-nine-56.vercel.app/)
 ---
 
-## 🚀 Features
+##  Features
 
 - 🎮 **Start Screen**: Game-style entry screen with "Press Start" interaction.
 - 🌌 **Animated Transitions**: Between each level, with space-like whoosh sounds.
@@ -16,12 +16,12 @@ You can try it online [here](https://my-portfolio-mu-nine-56.vercel.app/)
   - **Level 1**: About Me 
   - **Level 2**: My Skills — with interactive arrows to browse skill pages.
   - **Level 3**: Project Showcase — each project shown like a power-up.
-- 🧑‍🚀 **Pixel Art & Game UI**: All elements styled like a retro RPG.
-- 🔊 **Sound Effects**: Each interaction is paired with sound (arrow click, transitions, etc).
+- **Pixel Art & Game UI**: All elements styled like a retro RPG.
+-  **Sound Effects**: Each interaction is paired with sound (arrow click, transitions, etc).
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: React + Vite  
 - **Styling**: Tailwind CSS + custom CSS  
@@ -31,13 +31,13 @@ You can try it online [here](https://my-portfolio-mu-nine-56.vercel.app/)
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 
 
 ---
 
-## 📦 Install & Run
+##  Install & Run
 
 ```bash
 # Clone the repository
@@ -54,11 +54,9 @@ npm run dev
 ---
 
 
-## Contact
-
 Made with ❤️ by [Ikram Kadri](https://github.com/ikramkdr)  
 ---
 
-## 🧠 License
+## License
 
 This project is open-source under the MIT License.****
