@@ -278,7 +278,13 @@
   }
   .projects {
   max-width: 500px;
-  margin:auto;
+  margin: auto;           /* centre horizontalement */
+  text-align: center;     /* centre le texte et le contenu */
+  display: flex;          /* active flexbox */
+  flex-direction: column; /* empile verticalement */
+  align-items: center;    /* centre horizontalement les enfants */
+}
+
  
 }
   .skills-table th {
