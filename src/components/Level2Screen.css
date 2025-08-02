@@ -131,3 +131,33 @@
   opacity: 0.6;
 }
 
+@media (max-width: 600px) {
+  .skill-box {
+    flex-direction: column;
+    height: auto;      /* Let height adapt to content */
+    padding: 1rem;
+    width: 90%;        /* Smaller width on mobile */
+    max-width: 350px;  /* Optional max width */
+  }
+  
+  .skills-left, .skills-right {
+    padding: 0;
+    width: 100%;
+  }
+   .skill-item {
+    font-size: 0.6rem;
+  }
+  
+  .skill-item span {
+    font-size: 1.1rem;
+  }
+  
+  .separator-line {
+    display: none; /* Hide separator line on small screens */
+  }
+}
+.skills-left, .skills-right, .skill-item {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto; /* optional */
+}
