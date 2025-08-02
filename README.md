@@ -32,10 +32,14 @@ You can try it online [here](https://my-portfolio-mu-nine-56.vercel.app/)
 ---
 
 ##  Screenshots
+### Introduction Screen
 ![IntroScreen](/src/ScreenShots/IntroScreen.PNG)
-
-
-
+### Loading Screen
+![LoadingScreen](src/ScreenShots/LoadingScreen.PNG)
+### Example of My Skills level
+![MySkills](src/ScreenShots/MySkills.PNG)
+### My Projects Introduction
+![MyProject](src/ScreenShots/Project%20Intro.PNG)
 ---
 
 ##  Install & Run
