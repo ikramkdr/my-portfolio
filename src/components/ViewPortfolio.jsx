@@ -124,8 +124,9 @@ export default function ViewPortfolio({ onBack }) {
         </section>
 
         {/* Projects Section */}
+                  <h1>MY PROJECTS</h1>
+
         <section className="projects">
-          <h1>MY PROJECTS</h1>
           <ul>
             <li className="project-item">
               <img src={gifMaliciousURL} alt="Malicious URL Classification" className="project-gif" />
