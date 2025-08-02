@@ -39,7 +39,7 @@ export default function Level2Screen({ onNextLevel }) {
         { icon: '⚙️', name: 'FEATURE ENGINEERING' },
         { icon: '⏳', name: 'DATASET PREPARATION & AUGMENTATION' },
       ],
-      note: `THIS CHARACTER UNLOCKED TOOLS : Scikit-Learn, PyTorch, GridSearchCV, OpenCV, NumPy, Matplotlib.\n PS : MACHINE LEARNING ISN’T JUST PREDICTION. IT’S LEARNING FROM PATTERNS AND TURNING DATA INTO WISDOM.`,
+      note: `THIS CHARACTER UNLOCKED TOOLS : Scikit-Learn, PyTorch.\n PS : MACHINE LEARNING ISN’T JUST PREDICTION. IT’S LEARNING FROM PATTERNS AND TURNING DATA INTO WISDOM.`,
     },
     {
       title: 'CYBERSECURITY & SYSTEMS',
@@ -61,7 +61,7 @@ export default function Level2Screen({ onNextLevel }) {
         { icon: '🚀', name: 'TEACHING/SHARING' },
         { icon: '📈', name: 'GROWTH MINDSET' },
       ],
-      note: `THIS CHARACTER UNLOCKED TOOLS : FIGMA, ADOBE, CANVA AND CREATIVITY.\n BEING A CREATOR MEANS SEEING BEYOND CODE — IT’S ABOUT TELLING A STORY THROUGH EVERY PIXEL.\n PS : THIS CHARACTER SPEAKS ENGLISH, FRENCH, ITALIAN, ARABIC AND KABYLE.`,
+      note: `THIS CHARACTER UNLOCKED TOOLS : FIGMA, ADOBE, CANVA AND CREATIVITY.\nPS : THIS CHARACTER SPEAKS ENGLISH, FRENCH, ITALIAN, ARABIC AND KABYLE.`,
     },
     {
       title: '👾LEVEL CLEARED👾',
