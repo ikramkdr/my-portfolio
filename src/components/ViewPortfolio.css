@@ -372,10 +372,8 @@ text-shadow: 1px 1px 0px #000000cc;
     line-height: 1rem;
   }
   .skills-table th{
-   font-size: 1.1rem;    /* un peu plus petit que sur PC */
-    text-align: center;   /* centré */
-    margin-bottom: 1rem;  /* 
- 
+   font-size: 0.7rem;    /* un peu plus petit que sur PC */
+   padding-right: 2rem; 
 
   }
  
