@@ -166,13 +166,7 @@
   box-shadow: 0 0 15px #6a5acd88;
 }
 
-.projects h1 {
-  margin-bottom: 1.2rem;
-  font-size: 1.3rem;
-  color: #000000;
-      text-shadow: 0px 0px 0px #000000cc;
 
-}
 
 .projects ul {
   list-style: none;
@@ -231,54 +225,6 @@
     transform: translateY(-8px);
   }
 }
-
-/* Responsive */
-
-@media (max-width: 800px) {
-  .about-me-box {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-  }
-
-  .about-me-left {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    margin-bottom: 1rem;
-  }
-
-  .spaceshippp-img,
-  .avatarr-img {
-    position: relative;
-    width: 140px;
-    height: 140px;
-    animation: float 3s ease-in-out infinite;
-  }
-
-  .avatarr-img {
-    width: 90px;
-    height: 90px;    z-index: 100;
-    border-radius: 50%;
-    left: -6PX;
-    top: -70px;
-    margin-top: -60px; /* chevauchement léger */
-  }
-
-  .about-me-right {
-    width: 100%;
-    text-align: center;
-    font-size: 0.8rem;
-    padding-right: 0;
-  }
-
-  .skills ul,
-  .projects ul {
-    padding-left: 1rem;
-    font-size: 0.9rem;
-  }
-}
-
 
 .contact-form {
   box-sizing: border-box;
@@ -341,4 +287,86 @@ text-shadow: 1px 1px 0px #000000cc;
 
 .socials-sidebar img:hover {
   transform: scale(1.2);
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .about-me-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .about-me-left {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .spaceshippp-img,
+  .avatarr-img {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .avatarr-img {
+    width: 90px;
+    height: 90px;    z-index: 100;
+    border-radius: 50%;
+    left: -6PX;
+    top: -70px;
+    margin-top: -60px; /* chevauchement léger */
+  }
+
+  .about-me-right {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-right: 0;
+  }
+
+.projects {
+  max-width: 350Px;
+
+
+}
+.project-item {
+  flex-direction: column;      /* Stack vertically */
+  align-items: center;         /* Center horizontally */
+  text-align: center;    
+  gap: 1rem;  
+                 /* Space between elements */
+}
+
+.project-item strong {
+  order: 1;                   /* Title first */
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.project-gif {
+  order: 0;                   /* GIF second */
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0.5rem;
+}
+  .skills ul {
+    padding-left: 1rem;
+    font-size: 0.9rem;
+  }
+   .project-item div {
+  font-size: 0.75rem;
+}
+
+}
+
+h1{
+    margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  color: #000000;
+      text-shadow: 0px 0px 0px #000000cc;
 }
