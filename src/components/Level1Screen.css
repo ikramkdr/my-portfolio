@@ -42,13 +42,21 @@
 .level1-description {
   max-width: 600px;
   text-align: left;
-   color: rgb(0, 0, 0);
-
+  color: rgb(0, 0, 0);
   text-shadow: 1px 1px #000;
   font-size: 0.7rem;
   text-decoration: blueviolet;
-  line-height: 2rem;
+  line-height: 1.4rem;
 }
+
+
+.level1-content {
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  position: relative; /* ensure positioning context */
+}
+
 .bubble-style {
   background-color: #b3b3ff;
   border: 2px solid #000;
@@ -56,30 +64,38 @@
   padding: 20px;
   max-width: 550px;
   margin-top: 2rem;
+  margin-right: 0;         /* flush right */
+  text-align: left;
 }
-
 
 .level1-astronaut {
   position: relative;
-  margin-top: 4rem;
-  
+  margin-top: 1rem;
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: center; /* centre horizontalement */
 }
 
-
 .speech-bubble {
-  position: absolute;
-  top: -50px;
-  right: -30px;
+  position: static; /* supprime position absolue */
+  top: auto;
+  right: auto;
   background-color: #b3b3ff;
   color: black;
   border: 2px solid #000;
   padding: 10px;
   font-size: 0.5rem;
-  width: 150px;
+  width: 180px;
   cursor: pointer;
   box-shadow: 2px 2px 0 #000;
   text-align: center;
+  transition: transform 0.2s ease;
 }
+
+.speech-bubble:hover {
+  transform: scale(1.05);
+}
+
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -102,14 +118,7 @@
   from, to { border-color: transparent; }
   50% { border-color: white; }
 }
-.level1-astronaut {
-  position: relative;
-  margin-top: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem; /* espace entre flèche et bulle */
-}
+
 .speech-bubble:hover {
   transform: scale(1.05);
 }
@@ -145,4 +154,36 @@
   bottom: -50px;
   width: 290px; /* un peu plus large pour bien encadrer */
   z-index: 1;
+}
+
+@media (max-width: 600px){
+  
+.level1-astronaut {
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: center; /* centre horizontalement */
+}
+
+.speech-bubble {
+  position: static; /* supprime position absolue */
+  top: auto;
+  right: auto;
+  background-color: #b3b3ff;
+  color: black;
+  border: 2px solid #000;
+  padding: 10px;
+  font-size: 0.5rem;
+  width: 150px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #000;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.speech-bubble:hover {
+  transform: scale(1.05);
+}
+  
 }
