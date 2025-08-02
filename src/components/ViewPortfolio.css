@@ -278,6 +278,7 @@
   }
   .projects {
   max-width: 500px;
+  margin:auto;
  
 }
   .skills-table th {
