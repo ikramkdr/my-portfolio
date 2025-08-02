@@ -139,7 +139,11 @@
     width: 90%;        /* Smaller width on mobile */
     max-width: 350px;  /* Optional max width */
   }
-  
+   .astronaut {
+    right: 10px;     /* move to right with some padding */
+    left: auto;      /* unset left */
+    bottom: -40px;   /* keep same vertical position */
+  }
   .skills-left, .skills-right {
     padding: 0;
     width: 100%;
