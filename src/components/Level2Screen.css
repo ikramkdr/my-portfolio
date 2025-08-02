@@ -139,23 +139,30 @@
     width: 90%;        /* Smaller width on mobile */
     max-width: 350px;  /* Optional max width */
   }
-   .astronaut {
-    right: 10px;     /* move to right with some padding */
-    left: auto;      /* unset left */
-    bottom: -40px;   /* keep same vertical position */
-  }
+  
+.level2-title {
+  font-size: 0.9rem;
+  text-align: center;
+}
   .skills-left, .skills-right {
     padding: 0;
     width: 100%;
   }
    .skill-item {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   
+.note-text {
+  font-size: 0.6rem;
+  }
   .skill-item span {
     font-size: 1.1rem;
   }
-  
+   .astronaut {
+    right: 10px;     /* move to right with some padding */
+    left: auto;      /* unset left */
+    bottom: -40px;   /* keep same vertical position */
+  }
   .separator-line {
     display: none; /* Hide separator line on small screens */
   }
