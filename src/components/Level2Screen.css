@@ -160,9 +160,7 @@
     font-size: 1.1rem;
   }
    .astronaut {
-    right: 10px;     /* move to right with some padding */
-    left: auto;      /* unset left */
-    bottom: -40px;   /* keep same vertical position */
+    width:0px;  /* keep same vertical position */
   }
   .separator-line {
     display: none; /* Hide separator line on small screens */
