@@ -5,7 +5,7 @@ import background from '../assets/backgrounds/background3.svg';
 export default function Transition4({ onGoToLevel }) {
   return (
     <div className="transition4-screen" style={{ backgroundImage: `url(${background})` }}>
-      <h1 className="final-title-affichage">👾 CONGRATULATIONS 👾</h1>
+      <h1 className="final-title">👾 CONGRATULATIONS 👾</h1>
 
       <p className="final-subtext">
         YOU HAVE CLEARED ALL THE LEVELS <br />
