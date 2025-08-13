@@ -17,6 +17,7 @@
 .final-title {
   font-size: 1.5rem;
   text-shadow: 2px 2px #000;
+  color:white;
   animation: blink 1s steps(2, start) infinite;
 }
 
