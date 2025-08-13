@@ -152,3 +152,42 @@ background-color: #402060; /* fond violet foncé */
   height: auto;
   image-rendering: pixelated;
 }
+/* --- Responsive par défaut --- */
+#speech-bubble {
+  width: 90%; /* au lieu de 500px */
+  max-width: 500px; /* limite sur grand écran */
+  margin: 50px auto 30px auto;
+}
+
+#speech-txt {
+  font-size: clamp(8px, 2.5vw, 12px); /* adapte selon largeur écran */
+  padding: 12px;
+}
+
+.project-title {
+  font-size: clamp(16px, 5vw, 24px);
+}
+
+.start-projects-btn {
+  font-size: clamp(0.7rem, 3.5vw, 1rem);
+  padding: 0.8rem 1.5rem;
+}
+
+/* --- Ajustements pour très petits écrans --- */
+@media (max-width: 480px) {
+  .project-guy {
+    width: 50px;
+  }
+
+  #speech-arrow {
+    margin-left: 60%; /* ajuste la position sur petits écrans */
+  }
+
+  .character-wrapper {
+    gap: 10px;
+  }
+
+  .speech-section {
+    gap: 5px;
+  }
+}
